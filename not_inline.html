@@ -15,23 +15,15 @@
             { Name: "Eyes Wide Shut", ReleaseYear: "1999", Director: "Stanley Kubrick" },
             { Name: "The Inheritance", ReleaseYear: "1976", Director: "Mauro Bolognini" }
             ];
-        </script>
+            
+            $(function() {
+                $.get('template.html', function(tmpl) {
+                    var output = $.tmpl(tmpl, movies);
 
-
-        <script id="summaryTemplate" src="template.html" type="text/x-jquery-tmpl"></script>
-
-
-        <script>
-            function renderList() {
-                $( "#summaryTemplate" ).tmpl( movies ).appendTo( "#moviesList" );
-            }
-        </script>
-
-
-        <script>
-            $(function(){
-                $('#showBtn').click(function(data){
-                    renderList();
+                    $('#showBtn').click(function(e) {
+                        e.preventDefault();
+                        output.appendTo('#moviesList');
+                    });
                 });
             });
         </script>
