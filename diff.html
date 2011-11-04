@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>diff</title>
+<meta name="Generator" content="Vim/7.3">
+<meta name="plugin-version" content="vim7.3_v8">
+<meta name="settings" content="number_lines,whole_filler,use_css,expand_tabs">
+<style type="text/css">
+<!--
+pre { font-family: monospace; color: #ffffff; background-color: #080808; }
+body { font-family: monospace; color: #ffffff; background-color: #080808; }
+.lnr { color: #5f5fff; background-color: #080808; }
+.Special { color: #ffd7d7; }
+.String { color: #ffaf5f; background-color: #262626; }
+.Constant { color: #ff40ff; }
+.Number { color: #ff5f5f; }
+.Type { color: #87ffaf; }
+.PreProc { color: #5fd7ff; }
+.Statement { color: #ffff00; }
+.Identifier { color: #00ffff; font-weight: bold; }
+.Comment { color: #00ffff; }
+.DiffAdd { color: #ffffff; background-color: #005f00; }
+.DiffDelete { color: #ffffff; background-color: #5f0000; }
+-->
+<!--
+table { table-layout: fixed; }
+html, body, table, tbody { width: 100%; margin: 0; padding: 0; }
+th, td { width: 50.0%; }
+td div { overflow: auto; }
+-->
+</style>
+</head>
+<body>
+<table border="1" width="100%">
+<tr>
+<th>template_example/inline.html</th>
+<th>template_example/not_inline.html</th>
+</tr><tr>
+<td valign="top"><div>
+<pre>
+<span class="lnr"> 1 </span>
+<span class="lnr"> 2 </span><span class="Comment">&lt;!DOCTYPE html&gt;</span>
+<span class="lnr"> 3 </span><span class="Identifier">&lt;</span><span class="Statement">html</span><span class="Identifier">&gt;</span>
+<span class="lnr"> 4 </span>    <span class="Identifier">&lt;</span><span class="Statement">head</span><span class="Identifier">&gt;</span>
+<span class="lnr"> 5 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">style</span><span class="Identifier">&gt;</span>
+<span class="lnr"> 6 </span>            <span class="Statement">table</span> <span class="Identifier">{</span> <span class="Type">border-collapse</span>:<span class="Type">collapse</span>; <span class="Type">margin</span>:<span class="Number">8px</span>; <span class="Type">background-color</span>:<span class="Constant">#f8f8f8</span>; <span class="Identifier">}</span>
+<span class="lnr"> 7 </span>            <span class="Statement">table</span> <span class="Statement">td</span> <span class="Identifier">{</span> <span class="Type">height</span>:<span class="Number">30px</span>; <span class="Type">width</span>:<span class="Number">100px</span>; <span class="Type">border</span>:<span class="Number">1px</span> <span class="Type">solid</span> <span class="Constant">blue</span>; <span class="Type">padding</span>:<span class="Number">3px</span>; <span class="Identifier">}</span>
+<span class="lnr"> 8 </span>        <span class="Identifier">&lt;/</span><span class="Statement">style</span><span class="Identifier">&gt;</span>
+<span class="lnr"> 9 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier"> </span><span class="Type">src</span><span class="Identifier">=</span><span class="String">&quot;<a href="http://code.jquery.com/jquery-latest.min.js">http://code.jquery.com/jquery-latest.min.js</a>&quot;</span><span class="Identifier">&gt;</span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">10 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier"> </span><span class="Type">src</span><span class="Identifier">=</span><span class="String">&quot;<a href="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js">http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js</a>&quot;</span><span class="Identifier">&gt;</span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">11 </span>
+<span class="lnr">12 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">13 </span><span class="Special">            </span><span class="Identifier">var</span><span class="Special"> movies = </span><span class="Identifier">[</span>
+<span class="lnr">14 </span><span class="Special">            </span><span class="Identifier">{</span><span class="Special"> Name: </span><span class="String">&quot;The Red Violin&quot;</span><span class="Special">, ReleaseYear: </span><span class="String">&quot;1998&quot;</span><span class="Special">, Director: </span><span class="String">&quot;Françs Girard&quot;</span><span class="Special"> </span><span class="Identifier">}</span><span class="Special">,</span>
+<span class="lnr">15 </span><span class="Special">            </span><span class="Identifier">{</span><span class="Special"> Name: </span><span class="String">&quot;Eyes Wide Shut&quot;</span><span class="Special">, ReleaseYear: </span><span class="String">&quot;1999&quot;</span><span class="Special">, Director: </span><span class="String">&quot;Stanley Kubrick&quot;</span><span class="Special"> </span><span class="Identifier">}</span><span class="Special">,</span>
+<span class="lnr">16 </span><span class="Special">            </span><span class="Identifier">{</span><span class="Special"> Name: </span><span class="String">&quot;The Inheritance&quot;</span><span class="Special">, ReleaseYear: </span><span class="String">&quot;1976&quot;</span><span class="Special">, Director: </span><span class="String">&quot;Mauro Bolognini&quot;</span><span class="Special"> </span><span class="Identifier">}</span>
+<span class="lnr">17 </span><span class="Special">            </span><span class="Identifier">]</span><span class="Special">;</span>
+<span class="lnr">18 </span><span class="Special">        </span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">19 </span>
+   <span class="DiffDelete">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="DiffDelete">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="lnr">20 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier"> </span><span class="Type">id</span><span class="Identifier">=</span><span class="String">&quot;summaryTemplate&quot;</span><span class="Identifier"> </span><span class="Type">type</span><span class="Identifier">=</span><span class="String">&quot;text/x-jquery-tmpl&quot;</span><span class="Identifier">&gt;</span>
+<span class="lnr">21 </span><span class="Special">            &lt;tr&gt; &lt;td&gt;$</span><span class="Identifier">{</span><span class="Special">Name</span><span class="Identifier">}</span><span class="Special">&lt;/td&gt; &lt;td&gt;$</span><span class="Identifier">{</span><span class="Special">ReleaseYear</span><span class="Identifier">}</span><span class="Special">&lt;/td&gt; &lt;td&gt;$</span><span class="Identifier">{</span><span class="Special">Director</span><span class="Identifier">}</span><span class="Special">&lt;/td&gt; &lt;/tr&gt;</span>
+<span class="lnr">22 </span><span class="Special">        </span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+   <span class="DiffDelete">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="DiffDelete">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="DiffDelete">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="DiffDelete">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+   <span class="DiffDelete">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="lnr">23 </span>
+<span class="lnr">24 </span>
+<span class="lnr">25 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">26 </span><span class="Special">            </span><span class="Identifier">function</span><span class="Special"> renderList</span>()<span class="Special"> </span><span class="Identifier">{</span>
+<span class="lnr">27 </span><span class="Special">                $</span>(<span class="Special"> </span><span class="String">&quot;#summaryTemplate&quot;</span><span class="Special"> </span>)<span class="Special">.tmpl</span>(<span class="Special"> movies </span>)<span class="Special">.appendTo</span>(<span class="Special"> </span><span class="String">&quot;#moviesList&quot;</span><span class="Special"> </span>)<span class="Special">;</span>
+<span class="lnr">28 </span><span class="Special">            </span><span class="Identifier">}</span>
+<span class="lnr">29 </span><span class="Special">        </span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">30 </span>
+<span class="lnr">31 </span>
+<span class="lnr">32 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">33 </span><span class="Special">            $</span>(<span class="Identifier">function</span>()<span class="Identifier">{</span>
+<span class="lnr">34 </span><span class="Special">                $</span>(<span class="String">'#showBtn'</span>)<span class="Special">.click</span>(<span class="Identifier">function</span>(<span class="Special">data</span>)<span class="Identifier">{</span>
+<span class="lnr">35 </span><span class="Special">                    renderList</span>()<span class="Special">;</span>
+<span class="lnr">36 </span><span class="Special">                </span><span class="Identifier">}</span>)<span class="Special">;</span>
+<span class="lnr">37 </span><span class="Special">            </span><span class="Identifier">}</span>)<span class="Special">;</span>
+<span class="lnr">38 </span><span class="Special">        </span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">39 </span>
+<span class="lnr">40 </span><span class="PreProc">    </span><span class="Identifier">&lt;/</span><span class="Statement">head</span><span class="Identifier">&gt;</span>
+<span class="lnr">41 </span>    <span class="Identifier">&lt;</span><span class="Statement">body</span><span class="Identifier">&gt;</span>
+<span class="lnr">42 </span>        <span class="Identifier">&lt;</span><span class="Statement">button</span><span class="Identifier"> </span><span class="Type">id</span><span class="Identifier">=</span><span class="String">&quot;showBtn&quot;</span><span class="Identifier">&gt;</span>Show movies<span class="Identifier">&lt;/</span><span class="Statement">button</span><span class="Identifier">&gt;</span><span class="Identifier">&lt;</span><span class="Statement">br</span><span class="Identifier">/&gt;</span>
+<span class="lnr">43 </span>        <span class="Identifier">&lt;</span><span class="Statement">table</span><span class="Identifier">&gt;&lt;</span><span class="Statement">tbody</span><span class="Identifier"> </span><span class="Type">id</span><span class="Identifier">=</span><span class="String">&quot;moviesList&quot;</span><span class="Identifier">&gt;</span><span class="Identifier">&lt;/</span><span class="Statement">tbody</span><span class="Identifier">&gt;&lt;/</span><span class="Statement">table</span><span class="Identifier">&gt;</span>
+<span class="lnr">44 </span>    <span class="Identifier">&lt;/</span><span class="Statement">body</span><span class="Identifier">&gt;</span>
+<span class="lnr">45 </span><span class="Identifier">&lt;/</span><span class="Statement">html</span><span class="Identifier">&gt;</span>
+</pre>
+</div></td>
+<td valign="top"><div>
+<pre>
+<span class="lnr"> 1 </span>
+<span class="lnr"> 2 </span><span class="Comment">&lt;!DOCTYPE html&gt;</span>
+<span class="lnr"> 3 </span><span class="Identifier">&lt;</span><span class="Statement">html</span><span class="Identifier">&gt;</span>
+<span class="lnr"> 4 </span>    <span class="Identifier">&lt;</span><span class="Statement">head</span><span class="Identifier">&gt;</span>
+<span class="lnr"> 5 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">style</span><span class="Identifier">&gt;</span>
+<span class="lnr"> 6 </span>            <span class="Statement">table</span> <span class="Identifier">{</span> <span class="Type">border-collapse</span>:<span class="Type">collapse</span>; <span class="Type">margin</span>:<span class="Number">8px</span>; <span class="Type">background-color</span>:<span class="Constant">#f8f8f8</span>; <span class="Identifier">}</span>
+<span class="lnr"> 7 </span>            <span class="Statement">table</span> <span class="Statement">td</span> <span class="Identifier">{</span> <span class="Type">height</span>:<span class="Number">30px</span>; <span class="Type">width</span>:<span class="Number">100px</span>; <span class="Type">border</span>:<span class="Number">1px</span> <span class="Type">solid</span> <span class="Constant">blue</span>; <span class="Type">padding</span>:<span class="Number">3px</span>; <span class="Identifier">}</span>
+<span class="lnr"> 8 </span>        <span class="Identifier">&lt;/</span><span class="Statement">style</span><span class="Identifier">&gt;</span>
+<span class="lnr"> 9 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier"> </span><span class="Type">src</span><span class="Identifier">=</span><span class="String">&quot;<a href="http://code.jquery.com/jquery-latest.min.js">http://code.jquery.com/jquery-latest.min.js</a>&quot;</span><span class="Identifier">&gt;</span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">10 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier"> </span><span class="Type">src</span><span class="Identifier">=</span><span class="String">&quot;<a href="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js">http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js</a>&quot;</span><span class="Identifier">&gt;</span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">11 </span>
+<span class="lnr">12 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">13 </span><span class="Special">            </span><span class="Identifier">var</span><span class="Special"> movies = </span><span class="Identifier">[</span>
+<span class="lnr">14 </span><span class="Special">            </span><span class="Identifier">{</span><span class="Special"> Name: </span><span class="String">&quot;The Red Violin&quot;</span><span class="Special">, ReleaseYear: </span><span class="String">&quot;1998&quot;</span><span class="Special">, Director: </span><span class="String">&quot;Françs Girard&quot;</span><span class="Special"> </span><span class="Identifier">}</span><span class="Special">,</span>
+<span class="lnr">15 </span><span class="Special">            </span><span class="Identifier">{</span><span class="Special"> Name: </span><span class="String">&quot;Eyes Wide Shut&quot;</span><span class="Special">, ReleaseYear: </span><span class="String">&quot;1999&quot;</span><span class="Special">, Director: </span><span class="String">&quot;Stanley Kubrick&quot;</span><span class="Special"> </span><span class="Identifier">}</span><span class="Special">,</span>
+<span class="lnr">16 </span><span class="Special">            </span><span class="Identifier">{</span><span class="Special"> Name: </span><span class="String">&quot;The Inheritance&quot;</span><span class="Special">, ReleaseYear: </span><span class="String">&quot;1976&quot;</span><span class="Special">, Director: </span><span class="String">&quot;Mauro Bolognini&quot;</span><span class="Special"> </span><span class="Identifier">}</span>
+<span class="lnr">17 </span><span class="Special">            </span><span class="Identifier">]</span><span class="Special">;</span>
+<span class="lnr">18 </span><span class="Special">        </span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">19 </span>
+<span class="lnr">20 </span><span class="DiffAdd"> </span><span class="DiffAdd">                                                                                                                                                                                                                                                                                                                                                                       </span>
+<span class="lnr">21 </span><span class="PreProc DiffAdd">        </span><span class="Comment DiffAdd">&lt;!</span><span class="Comment DiffAdd">--</span><span class="DiffAdd">                                                                                                                                                                                                                                                                                                                                                            </span>
+<span class="lnr">22 </span><span class="Comment">        &lt;script id=&quot;summaryTemplate&quot; type=&quot;text/x-jquery-tmpl&quot;&gt;</span>
+<span class="lnr">23 </span><span class="Comment">            &lt;tr&gt; &lt;td&gt;${Name}&lt;/td&gt; &lt;td&gt;${ReleaseYear}&lt;/td&gt; &lt;td&gt;${Director}&lt;/td&gt; &lt;/tr&gt;</span>
+<span class="lnr">24 </span><span class="Comment">        &lt;/script&gt;</span>
+<span class="lnr">25 </span><span class="Comment DiffAdd">        --</span><span class="Comment DiffAdd">&gt;</span><span class="DiffAdd">                                                                                                                                                                                                                                                                                                                                                             </span>
+<span class="lnr">26 </span><span class="PreProc DiffAdd">        </span><span class="Comment DiffAdd">&lt;!</span><span class="Comment DiffAdd">-- how do I make this work??? --</span><span class="Comment DiffAdd">&gt;</span><span class="DiffAdd">                                                                                                                                                                                                                                                                                                                             </span>
+<span class="lnr">27 </span><span class="PreProc DiffAdd">        </span><span class="Identifier DiffAdd">&lt;</span><span class="Statement DiffAdd">script</span><span class="Identifier DiffAdd"> </span><span class="Type DiffAdd">id</span><span class="Identifier DiffAdd">=</span><span class="String DiffAdd">&quot;summaryTemplate&quot;</span><span class="Identifier DiffAdd"> </span><span class="Type DiffAdd">src</span><span class="Identifier DiffAdd">=</span><span class="String DiffAdd">&quot;template.html&quot;</span><span class="Identifier DiffAdd"> </span><span class="Type DiffAdd">type</span><span class="Identifier DiffAdd">=</span><span class="String DiffAdd">&quot;text/x-jquery-tmpl&quot;</span><span class="Identifier DiffAdd">&gt;</span><span class="Identifier DiffAdd">&lt;/</span><span class="Statement DiffAdd">script</span><span class="Identifier DiffAdd">&gt;</span><span class="DiffAdd">                                                                                                                                                                                                                                                                            </span>
+<span class="lnr">28 </span><span class="DiffAdd"> </span><span class="DiffAdd">                                                                                                                                                                                                                                                                                                                                                                       </span>
+<span class="lnr">29 </span><span class="DiffAdd"> </span><span class="DiffAdd">                                                                                                                                                                                                                                                                                                                                                                       </span>
+<span class="lnr">30 </span>
+<span class="lnr">31 </span>
+<span class="lnr">32 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">33 </span><span class="Special">            </span><span class="Identifier">function</span><span class="Special"> renderList</span>()<span class="Special"> </span><span class="Identifier">{</span>
+<span class="lnr">34 </span><span class="Special">                $</span>(<span class="Special"> </span><span class="String">&quot;#summaryTemplate&quot;</span><span class="Special"> </span>)<span class="Special">.tmpl</span>(<span class="Special"> movies </span>)<span class="Special">.appendTo</span>(<span class="Special"> </span><span class="String">&quot;#moviesList&quot;</span><span class="Special"> </span>)<span class="Special">;</span>
+<span class="lnr">35 </span><span class="Special">            </span><span class="Identifier">}</span>
+<span class="lnr">36 </span><span class="Special">        </span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">37 </span>
+<span class="lnr">38 </span>
+<span class="lnr">39 </span><span class="PreProc">        </span><span class="Identifier">&lt;</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">40 </span><span class="Special">            $</span>(<span class="Identifier">function</span>()<span class="Identifier">{</span>
+<span class="lnr">41 </span><span class="Special">                $</span>(<span class="String">'#showBtn'</span>)<span class="Special">.click</span>(<span class="Identifier">function</span>(<span class="Special">data</span>)<span class="Identifier">{</span>
+<span class="lnr">42 </span><span class="Special">                    renderList</span>()<span class="Special">;</span>
+<span class="lnr">43 </span><span class="Special">                </span><span class="Identifier">}</span>)<span class="Special">;</span>
+<span class="lnr">44 </span><span class="Special">            </span><span class="Identifier">}</span>)<span class="Special">;</span>
+<span class="lnr">45 </span><span class="Special">        </span><span class="Identifier">&lt;/</span><span class="Statement">script</span><span class="Identifier">&gt;</span>
+<span class="lnr">46 </span>
+<span class="lnr">47 </span><span class="PreProc">    </span><span class="Identifier">&lt;/</span><span class="Statement">head</span><span class="Identifier">&gt;</span>
+<span class="lnr">48 </span>    <span class="Identifier">&lt;</span><span class="Statement">body</span><span class="Identifier">&gt;</span>
+<span class="lnr">49 </span>        <span class="Identifier">&lt;</span><span class="Statement">button</span><span class="Identifier"> </span><span class="Type">id</span><span class="Identifier">=</span><span class="String">&quot;showBtn&quot;</span><span class="Identifier">&gt;</span>Show movies<span class="Identifier">&lt;/</span><span class="Statement">button</span><span class="Identifier">&gt;</span><span class="Identifier">&lt;</span><span class="Statement">br</span><span class="Identifier">/&gt;</span>
+<span class="lnr">50 </span>        <span class="Identifier">&lt;</span><span class="Statement">table</span><span class="Identifier">&gt;&lt;</span><span class="Statement">tbody</span><span class="Identifier"> </span><span class="Type">id</span><span class="Identifier">=</span><span class="String">&quot;moviesList&quot;</span><span class="Identifier">&gt;</span><span class="Identifier">&lt;/</span><span class="Statement">tbody</span><span class="Identifier">&gt;&lt;/</span><span class="Statement">table</span><span class="Identifier">&gt;</span>
+<span class="lnr">51 </span>    <span class="Identifier">&lt;/</span><span class="Statement">body</span><span class="Identifier">&gt;</span>
+<span class="lnr">52 </span><span class="Identifier">&lt;/</span><span class="Statement">html</span><span class="Identifier">&gt;</span>
+</pre>
+</div></td>
+</tr>
+</table>
+</body>
+</html>
+
